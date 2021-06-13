@@ -1,0 +1,95 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 20px auto;
+    
+}
+header{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: lightblue;
+
+}
+main{
+    height: 600px;
+    position: relative;
+}
+body{
+    padding:50px;
+}
+aside{
+    float: left;
+    width: 30%;
+    background-color: mediumseagreen;
+    height: 600px;
+}
+
+section{
+    height:600px;
+    float: left;
+    width: 70%;
+    background-color: darkolivegreen;
+}
+footer{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: darkslateblue;
+}
+#box{
+    width: 100px;
+    height: 100px;
+    background-color: deepskyblue;
+    position: relative;
+    left: 50px;
+    top: 10px;
+}
+#boxx{
+
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+
+
+}
+#boxie{
+/* position absolute paei kai vriskei to prohgoumeno position declaration an yparxei mesa sto tree/parent p.x. #main{position:relative;} */ 
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    top: 20px;
+}
+#sticky{
+    background-color: darkkhaki;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+
+}
+
+
+ul li{
+    color: red;
+    background-color: blue;
+}
+/*div>p{
+    background-color: yellow;
+}*/
+
+/*div+p{
+    background-color: yellow;
+}*/
+
+div~p{
+    background-color: green;
+}
