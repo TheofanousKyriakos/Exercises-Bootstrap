@@ -1,0 +1,62 @@
+/* .header {
+  padding: 80px;
+  width: unset;
+  text-align: center;
+  background-image: linear-gradient(270deg, red,green,blue,yellow);
+  background-size: 800% 800%;
+  color: purple;
+  animation: BanerAnimation;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+@keyframes BanerAnimation {
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 200px;
+    width: 1000px;
+    margin: 50px auto;
+    border: 1px solid black;
+    overflow: hidden;
+    position: relative;
+}
+
+.back {
+    background-image: url("back2.png");
+    background-repeat: repeat-x;
+    height: 200px;
+    width: 1320px;
+    position: relative;
+    animation: banner 3s linear infinite;
+    }
+
+.content {
+    height: 30px;
+    line-height: 30px;
+    width: 1000px;
+    background-color:rgb(51, 51, 51, 0.6);
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    animation: move 3s linear;
+    top: 170px;
+}
+
+@keyframes banner {
+    0% {right: 0px;}
+    100% {right: 320px;}
+}
+
+@keyframes move{
+    0%{top:0;}
+    100%{top: 170px;}
+}

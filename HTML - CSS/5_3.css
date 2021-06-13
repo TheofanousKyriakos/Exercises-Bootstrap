@@ -1,0 +1,144 @@
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            #wrapper {
+                max-width: 1100px;
+                height: 1200px;
+                background-color: blue;
+                margin: 0 auto;
+            }
+            
+            header {
+                height: 100px;
+                width: 100%;
+                background-color: orange;
+                position: sticky;
+                top: 0;
+                z-index: 13;
+            }
+            
+            nav {
+                height: 50px;
+                background-color: green;
+                padding-left: 10px;
+                padding-top: 10px;
+                position: relative;
+                z-index: 10;
+            }
+            
+            nav ul {
+                list-style-type: none;
+            }
+            
+            nav ul ul {
+                visibility: hidden;
+            }
+            
+            nav ul li:hover ul {
+                visibility: visible;
+            }
+            
+            nav ul li {
+                width: 120px;
+                height: 40px;
+                float: left;
+                margin-left: 3px;
+            }
+            
+            nav ul li a {
+                text-decoration: none;
+                width: 120px;
+                height: 40px;
+                display: block;
+                color: #fff;
+                background-color: rgb(65, 163, 163);
+                text-align: center;
+                line-height: 40px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                transition: all 0.5s linear;
+            }
+            
+            nav ul li a:hover {
+                color: rgb(65, 163, 163);
+                background-color: #fff;
+            }
+
+            nav ul li a:active {
+                background-color: red;
+            }
+            
+            main {
+                height: 1000px;
+                background-color: black;
+            }
+            
+            #ena {
+                background-color: red;
+                width: 30%;
+                height: 800px;
+                float: left;
+                position: relative;
+                z-index: 3;
+            }
+            
+            #dyo {
+                background-color: purple;
+                width: 50%;
+                height: 800px;
+                float: left;
+                padding-left: 5%;
+                color: white;
+            }
+            
+            #dyo ul li:nth-child(3n+2) {
+                color: red;
+            }
+            
+            input:focus {
+                background-color: yellow;
+            }
+            
+            #dyo li::after {
+                content: " PROSTHETO KEIMENO";
+            }
+            
+            #box {
+                width: 80px;
+                height: 80px;
+                background-color: yellow;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            
+            #tria {
+                background-color: pink;
+                width: 20%;
+                height: 800px;
+                float: left;
+                background-image: url("Brad.jpg");
+                background-size: contain;
+            }
+            
+            section {
+                height: 200px;
+                background-color: aqua;
+                clear: both;
+            }
+            
+            #kouti {
+                height: 200px;
+                background-color: pink;
+                width: 50%;
+                overflow: auto;
+            }
+            
+            footer {
+                height: 100px;
+                background-color: yellow;
+            }

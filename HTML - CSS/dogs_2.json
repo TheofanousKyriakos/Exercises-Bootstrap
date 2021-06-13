@@ -1,0 +1,20 @@
+[{
+        "name": "Bob",
+        "ratsa": "Yorki",
+        "color": "black",
+        "age": 4
+    },
+    {
+        "name": "Vodka",
+        "ratsa": "Beegle",
+        "color": "white",
+        "age": 7
+    },
+    {
+        "name": "Rex",
+        "ratsa": "German",
+        "color": "brown",
+        "age": 3
+    }
+
+]

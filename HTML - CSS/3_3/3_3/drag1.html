@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="drag1.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="yolo" ondragover="drover(event)" ondrop="drop(event)">
+    </div>
+    <br> <br>
+    <img id="drag2" src="Brad.jpg" alt="brad pitt" draggable="true" ondragstart="drag(event)">
+
+    <img id="drag3" src="Leonardo.jpg" alt="brad pitt" draggable="true" ondragstart="drag(event)">
+
+
+    <script>
+        function drag(ev) {
+            console.log("dragging");
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drover(ev) {
+            ev.preventDefault();
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var x = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(x));
+        }
+    </script>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas1</title>
+</head>
+<body>
+    <canvas id="canvas1" width="600" height="300" style="border: 1px solid black;">
+    </canvas>
+
+    <canvas id="canvas2" width="600" height="300" style="border: 1px solid black;">
+    </canvas>
+
+    <canvas id="canvas3" width="600" height="600" style="border: 1px solid black;">
+    </canvas>
+
+    <canvas id="pacman" width="600" height="300" style="border: 1px solid black;">
+    </canvas>
+
+    <script>
+        // canvas1
+        let canvas1 = document.getElementById("canvas1");
+        let ctx = canvas1.getContext('2d');
+        let ctx1 = canvas1.getContext('2d');
+
+        // dimiourgia prasinou orthogoniou
+        ctx.fillStyle = 'green';
+        ctx.fillRect(10,10,200,100);
+
+        // dimiourgia grammis
+        ctx.strokeStyle = "red";
+        ctx.moveTo(0,0);
+        ctx.lineTo(600,300);
+        ctx.stroke();
+        ctx.moveTo(0,300);
+        ctx.lineTo(600,0);
+        ctx.stroke();
+
+        // dimiourgioa kuklou
+        ctx1.strokeStyle = "blue";
+        ctx1.beginPath();
+        ctx1.arc(300,150,100,0,2*Math.PI);
+        ctx1.fillStyle = "red";
+        ctx1.stroke();
+        // ctx.fill();
+
+        // canvas2
+        let canvas2 = document.getElementById("canvas2");
+        let ctx2 = canvas2.getContext('2d');
+
+        ctx2.beginPath();
+        ctx2.moveTo(125,125);
+        ctx2.lineTo(250,125);
+        ctx2.lineTo(125,250);
+        ctx2.closePath();
+        ctx2.moveTo(250,125);
+        ctx2.lineTo(250,250);
+        ctx2.lineTo(125,250);
+        ctx2.closePath();
+        ctx2.stroke();
+
+
+        ctx2.fillRect(10,10,200,100);
+        ctx2.clearRect(80,45,60,30);
+
+
+        // canvas3
+        let canvas3 = document.getElementById("canvas3");
+        let ctx3 = canvas3.getContext('2d');
+
+        for(let y = 0; y < 600; y += 10) {
+        ctx3.moveTo(0,y);
+        ctx3.lineTo(600, y);
+        // ctx3.stroke();
+        };
+        ctx3.stroke();
+        
+        ctx3.beginPath();
+        ctx3.moveTo(120,10);
+        ctx3.quadraticCurveTo(50,150,400,10)
+        ctx3.stroke();
+
+        ctx3.beginPath();
+        ctx3.moveTo(120,10);
+        ctx3.quadraticCurveTo(1,250,400,10)
+        ctx3.stroke();
+
+        ctx3.beginPath();
+        ctx3.moveTo(300,150);
+        ctx3.quadraticCurveTo(200,150,200,250)
+        ctx3.stroke();
+
+        ctx3.beginPath();
+        ctx3.moveTo(300,150);
+        ctx3.quadraticCurveTo(400,150,400,250)
+        ctx3.stroke();
+
+        ctx3.beginPath();
+        ctx3.moveTo(280,300);
+        ctx3.quadraticCurveTo(200,300,200,250)
+        ctx3.stroke();
+
+        ctx3.beginPath();
+        ctx3.moveTo(320,300);
+        ctx3.quadraticCurveTo(400,300,400,250)
+        ctx3.stroke();
+
+        ctx3.beginPath();
+        ctx3.moveTo(280,300);
+        ctx3.quadraticCurveTo(340,300,240,400)
+        ctx3.stroke();
+
+        ctx3.beginPath();
+        ctx3.moveTo(320,300);
+        ctx3.quadraticCurveTo(360,300,240,400)
+        ctx3.stroke();
+
+        //canvas4
+        let pacman = document.getElementById("pacman");
+        let ctx4 = pacman.getContext('2d');
+
+        ctx4.fillRect(0,0,600,300);
+
+        ctx4.strokeStyle = "white";
+        ctx4.beginPath();
+        ctx4.arc(300,150,100,0,2*Math.PI);
+        ctx4.fillStyle = "yellow";
+        ctx4.fill();
+
+        ctx4.beginPath();
+        ctx4.moveTo(300,150);
+        ctx4.lineTo(450,80);
+        ctx4.lineTo(450,220);
+        ctx4.closePath();
+        ctx4.fillStyle = "black";
+        ctx4.fill();
+
+        ctx4.beginPath();
+        ctx4.arc(300,100,10,0,2*Math.PI);
+        ctx4.fillStyle = "black";
+        ctx4.fill();
+
+        ctx4.beginPath();
+        ctx4.arc(350,150,10,0,2*Math.PI);
+        ctx4.fillStyle = "yellow";
+        ctx4.fill();
+
+        ctx4.beginPath();
+        ctx4.arc(400,150,10,0,2*Math.PI);
+        ctx4.fillStyle = "yellow";
+        ctx4.fill();
+
+        ctx4.beginPath();
+        ctx4.arc(450,150,10,0,2*Math.PI);
+        ctx4.fillStyle = "yellow";
+        ctx4.fill();
+
+        ctx4.beginPath();
+        ctx4.arc(500,150,10,0,2*Math.PI);
+        ctx4.fillStyle = "yellow";
+        ctx4.fill();
+
+        ctx4.beginPath();
+        ctx4.arc(550,150,10,0,2*Math.PI);
+        ctx4.fillStyle = "yellow";
+        ctx4.fill();
+
+
+
+        ctx4.strokeStyle = "white";
+        ctx4.beginPath();
+        ctx4.arc(100,100,50,0,2*Math.PI);
+        ctx4.fillStyle = "white";
+        ctx4.fill();
+
+        ctx4.strokeStyle = "white";
+        ctx4.beginPath();
+        ctx4.arc(100,110,50,0,2*Math.PI);
+        ctx4.fillStyle = "white";
+        ctx4.fill();
+
+        ctx4.strokeStyle = "white";
+        ctx4.beginPath();
+        ctx4.arc(100,120,50,0,2*Math.PI);
+        ctx4.fillStyle = "white";
+        ctx4.fill();
+        
+        ctx4.fillStyle = 'black';
+        ctx4.fillRect(50,130,100,40);
+
+        ctx4.strokeStyle = "white";
+        ctx4.beginPath();
+        ctx4.arc(100,130,10,0,2*Math.PI);
+        ctx4.fillStyle = "white";
+        ctx4.fill();
+
+        ctx4.strokeStyle = "white";
+        ctx4.beginPath();
+        ctx4.arc(80,130,10,0,2*Math.PI);
+        ctx4.fillStyle = "white";
+        ctx4.fill();
+
+        ctx4.strokeStyle = "white";
+        ctx4.beginPath();
+        ctx4.arc(60,130,10,0,2*Math.PI);
+        ctx4.fillStyle = "white";
+        ctx4.fill();
+
+        ctx4.strokeStyle = "white";
+        ctx4.beginPath();
+        ctx4.arc(120,130,10,0,2*Math.PI);
+        ctx4.fillStyle = "white";
+        ctx4.fill();
+
+        ctx4.strokeStyle = "white";
+        ctx4.beginPath();
+        ctx4.arc(140,130,10,0,2*Math.PI);
+        ctx4.fillStyle = "white";
+        ctx4.fill();
+
+        ctx4.strokeStyle = "black";
+        ctx4.beginPath();
+        ctx4.arc(80,80,10,0,2*Math.PI);
+        ctx4.fillStyle = "black";
+        ctx4.fill();
+
+        ctx4.strokeStyle = "white";
+        ctx4.beginPath();
+        ctx4.arc(85,85,5,0,2*Math.PI);
+        ctx4.fillStyle = "white";
+        ctx4.fill();
+
+        ctx4.strokeStyle = "black";
+        ctx4.beginPath();
+        ctx4.arc(120,80,10,0,2*Math.PI);
+        ctx4.fillStyle = "black";
+        ctx4.fill();
+
+        ctx4.strokeStyle = "white";
+        ctx4.beginPath();
+        ctx4.arc(125,85,5,0,2*Math.PI);
+        ctx4.fillStyle = "white";
+        ctx4.fill();
+
+
+        ctx4.strokeStyle = "red";
+        ctx4.beginPath();
+        ctx4.arc(120,200,50,0,2*Math.PI);
+        ctx4.fillStyle = "red";
+        ctx4.fill();
+
+        ctx4.strokeStyle = "red";
+        ctx4.beginPath();
+        ctx4.arc(120,210,50,0,2*Math.PI);
+        ctx4.fillStyle = "red";
+        ctx4.fill();
+
+        ctx4.strokeStyle = "red";
+        ctx4.beginPath();
+        ctx4.arc(120,220,50,0,2*Math.PI);
+        ctx4.fillStyle = "red";
+        ctx4.fill();
+        
+        ctx4.fillStyle = 'black';
+        ctx4.fillRect(70,230,100,40);
+
+        ctx4.strokeStyle = "red";
+        ctx4.beginPath();
+        ctx4.arc(120,230,10,0,2*Math.PI);
+        ctx4.fillStyle = "red";
+        ctx4.fill();
+
+        ctx4.strokeStyle = "red";
+        ctx4.beginPath();
+        ctx4.arc(100,230,10,0,2*Math.PI);
+        ctx4.fillStyle = "red";
+        ctx4.fill();
+
+        ctx4.strokeStyle = "red";
+        ctx4.beginPath();
+        ctx4.arc(80,230,10,0,2*Math.PI);
+        ctx4.fillStyle = "red";
+        ctx4.fill();
+
+        ctx4.strokeStyle = "red";
+        ctx4.beginPath();
+        ctx4.arc(140,230,10,0,2*Math.PI);
+        ctx4.fillStyle = "red";
+        ctx4.fill();
+
+        ctx4.strokeStyle = "red";
+        ctx4.beginPath();
+        ctx4.arc(160,230,10,0,2*Math.PI);
+        ctx4.fillStyle = "red";
+        ctx4.fill();
+
+        ctx4.strokeStyle = "black";
+        ctx4.beginPath();
+        ctx4.arc(100,180,10,0,2*Math.PI);
+        ctx4.fillStyle = "black";
+        ctx4.fill();
+
+        ctx4.strokeStyle = "red";
+        ctx4.beginPath();
+        ctx4.arc(105,185,5,0,2*Math.PI);
+        ctx4.fillStyle = "red";
+        ctx4.fill();
+
+        ctx4.strokeStyle = "black";
+        ctx4.beginPath();
+        ctx4.arc(140,180,10,0,2*Math.PI);
+        ctx4.fillStyle = "black";
+        ctx4.fill();
+
+        ctx4.strokeStyle = "red";
+        ctx4.beginPath();
+        ctx4.arc(145,185,5,0,2*Math.PI);
+        ctx4.fillStyle = "red";
+        ctx4.fill();
+
+
+    </script>
+</body>
+</html>

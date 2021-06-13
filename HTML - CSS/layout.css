@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 400px;
+    background: url("back2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#logo {
+    height: 200px;
+    width: 360px;
+    background: url("starwars.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*nav */
+
+.header {
+    background-color: #000;
+    color: rgb(240, 236, 10);
+    font-size: 24px;
+    padding: 10px 3%;
+}
+
+#company {
+    width: 25%;
+    float: left;
+}
+
+nav {
+    width: 75%;
+    float: left;
+}
+
+nav ul {
+    float: right;
+    width: 100%;
+}
+
+nav ul li {
+    width: 25%;
+    height: 30px;
+    float: left;
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    color: rgb(240, 236, 10);
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+}
+
+
+/*burger*/
+
+.burger {
+    color: rgb(240, 236, 10);
+    text-decoration: none;
+    font-size: 36px;
+    display: none;
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+aside {
+    width: 35%;
+    float: left;
+    padding: 10px 3%;
+    text-align: justify;
+}
+
+aside img {
+    width: 100%;
+}
+
+#yolo {
+    width: 65%;
+    float: left;
+    padding: 10px 3%;
+    text-align: justify;
+}
+
+footer {
+    background-color: #000;
+    color: rgb(228, 231, 10);
+    font-size: 24px;
+    padding: 10px 0;
+    clear: both;
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.cf {
+    *zoom: 1;
+}
+
+
+/* Responsive design */
+
+@media only screen and (max-width: 800px) {
+    aside,
+    #yolo {
+        float: none;
+        width: 100%;
+    }
+    nav ul li {
+        width: 50%;
+        height: 40px;
+    }
+    nav ul li a {
+        height: 40px;
+        line-height: 40px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    aside img {
+        display: none;
+    }
+    .burger {
+        display: block;
+        float: right;
+    }
+    nav ul {
+        display: none;
+    }
+    #company {
+        width: 35%;
+    }
+    nav {
+        width: 65%;
+    }
+    nav ul li {
+        width: 100%;
+    }
+    nav ul li a {
+        text-align: right;
+    }
+}
+
+@media only screen and (min-width: 550px) {
+    nav ul {
+        display: block !important;
+    }
+}

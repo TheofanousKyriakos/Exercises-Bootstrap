@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+    <link rel="stylesheet" href="layout.css">
+    <link rel="icon" href="back2.png" type="image/png">
+</head>
+
+<body>
+    <section class="header cf">
+        <div id="company"> STAR WARS </div>
+        <nav>
+            <a href="javascript:void(0)" class="burger" onclick="menu()"> &#9776; </a>
+            <ul id="lista">
+                <li><a href="#">Αρχική</a></li>
+                <li><a href="#">Ανακοινώσεις</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Επικοινωνία</a></li>
+            </ul>
+        </nav>
+    </section>
+    <header>
+        <div id="logo"></div>
+    </header>
+    <div class="wrapper">
+        <main class="cf">
+            <aside>
+                <h3>Ανακοινώσεις</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis vel natus nulla nihil, tempore facilis nisi harum ut, aliquid, quas quisquam numquam quod nam autem. Libero omnis adipisci blanditiis voluptatibus!</p>
+                <img src="starwars.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident cum velit eos nobis repellat, numquam est explicabo tenetur molestiae fugiat animi obcaecati vel reiciendis earum vitae cupiditate voluptates quo placeat!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nobis minima eaque placeat adipisci neque aliquam voluptates, obcaecati illum commodi! Repellat nihil distinctio suscipit tempora sed consequatur ab tempore molestiae?</p>
+            </aside>
+            <section id="yolo">
+                <h3>Star Wars</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam nobis voluptatibus est aperiam, id quam repellat saepe quae dolorum possimus nemo voluptatem eum voluptates aliquam, eaque corporis error optio vero?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam illo blanditiis odit dolorum quisquam a reiciendis iusto omnis voluptatibus, velit laboriosam magni cumque sequi officiis facere maiores optio pariatur enim? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae nostrum aspernatur tempore incidunt expedita quae accusantium earum non, libero eum optio fuga hic cum, iste sed necessitatibus quia. Omnis, doloribus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum facilis eaque illo, rerum ipsam repellat et. Iste voluptatibus dolorem harum quasi aut consequuntur enim cumque iure, voluptas eum. Impedit, accusantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam deleniti pariatur totam sit illum eligendi, libero, nulla nesciunt maxime blanditiis tenetur, vero adipisci aliquid cupiditate debitis aspernatur illo soluta fugit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, obcaecati repellat esse fuga beatae earum voluptates quae unde necessitatibus? Exercitationem, necessitatibus labore velit praesentium ducimus suscipit placeat eius dignissimos vero.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eaque odit, ea est dolorum cumque dolores, accusamus quia, provident illum rerum ipsam distinctio sequi! Alias maxime quod dolore labore at? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo sit animi illo dolorem doloribus hic molestiae mollitia maxime. Aperiam vero qui inventore vel ipsa deserunt porro, distinctio sapiente eveniet minus! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum nostrum quisquam excepturi sapiente possimus expedita quis, minima ullam dolores placeat consequatur nesciunt laudantium repellendus quae facere quia nisi aperiam veniam!</p>
+            </section>
+            <footer>
+                <p>Copyright &copy; 2021 - Peoplecert</p>
+            </footer>
+        </main>
+    </div>
+    <script>
+        function menu() {
+            var x = document.getElementById("lista");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>

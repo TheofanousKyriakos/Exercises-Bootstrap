@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="bookstore.xsl" type="text/xsl" ?>
+<bookstore>
+    <book>
+        <titlos> The Shining </titlos>
+        <year> 1980 </year>
+        <writer> Stephen King</writer>
+    </book>
+    <book>
+        <titlos> ΙΤ</titlos>
+        <year> 1984 </year>
+        <writer> Stephen King</writer>
+    </book>
+</bookstore>

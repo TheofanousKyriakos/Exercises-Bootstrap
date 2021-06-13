@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #titlos {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+            background-color: pink;
+        }
+        #keimeno {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+            background-color: red;
+            display: none;
+        }
+        #box {
+            width: 150px;
+            height: 150px;
+            background-color: green;
+            position: relative;
+            top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="btn1">click</button>
+    <button id="btn2">toggle</button>
+    <p id="yolo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam incidunt doloribus veritatis iure in sunt debitis quo minima dolorem cumque? Nobis ipsum neque provident. Voluptatum dolor officia iure ab libero.</p>
+    <div id="titlos">Patise gia leptomereies</div>
+    <div id="keimeno">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quas magnam, quae cupiditate commodi beatae, tempore voluptates, perferendis dolorem corporis numquam. Nesciunt eos itaque necessitatibus. Eligendi omnis ipsum accusamus nulla?</div>
+    <button id="btn3">Animation</button>
+    <div id="box"></div>
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#btn1").click(function(){
+                alert("Hello")
+            });
+            $("#btn2").click(function() {
+                $("#yolo").toggle();
+            });
+            $("#titlos").click(function() {
+                $("#keimeno").slideToggle("slow");
+            });
+            $("#btn3").click(function() {
+                $("#box").animate({
+                    left:'250px'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

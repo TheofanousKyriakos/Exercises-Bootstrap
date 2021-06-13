@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="apotelesma"></p>
+    <div id="gmap" width="300px" height="400px"></div>
+</body>
+<script>
+    if (navigator.geolocation) {
+
+        navigator.geolocation.getCurrentPosition(function(position) {
+
+            let latitude = position.coords.latitude;
+            let longitude = position.coords.longitude;
+
+            document.getElementById("apotelesma").innerHTML = 
+                "To geografiko sou platos einai: " + latitude + 
+                " to geografiko sou mikos einai: " + longitude;
+
+                var mapProp = {
+                    center: new google.maps.LatLng(latitude, longitude),
+                    zoom: 10
+                };
+
+                var marker = new google.map.Marker({
+                    position: {
+                        lat: latitude,
+                        lng: longitude
+                    }
+                });
+
+                let map = new google.maps.Map(document.getElementById("gmap"),mapProp);
+
+        });
+
+    } else {
+        document.getElementById("apotelesma").innerHTML = "Den upostirizetai geolocation";
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+</html>

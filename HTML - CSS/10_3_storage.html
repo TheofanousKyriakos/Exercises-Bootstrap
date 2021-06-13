@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="apotelesma"></div>
+
+    <script>
+        if (typeof(Storage)!== undefined) {
+            localStorage.setItem("lastname", "Theofanous");
+            //localStorage.lastname = "Kotsiou";
+            //localStorage.lastname;
+
+            document.getElementById("apotelesma").innerHTML = 
+            localStorage.getItem("lastname");
+
+        } else {
+            document.getElementById("apotelesma").innerHTML = 
+            "Den upostirizetai web storage";
+        }
+    </script>
+</body>
+</html>

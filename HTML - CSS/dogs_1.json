@@ -1,0 +1,20 @@
+[{
+        "name": "Carrie",
+        "breed": "Maltese",
+        "color": "white",
+        "age": 14
+    },
+    {
+        "name": "Tequila",
+        "breed": "Maltese",
+        "color": "white",
+        "age": 7
+    },
+    {
+        "name": "Rex",
+        "breed": "German",
+        "color": "brown",
+        "age": 3
+    }
+
+]

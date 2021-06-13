@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>drag</title>
+</head>
+
+<body>
+    <div id="sample" ondragover="drover(event)" ondrop="drop(event)"></div>
+    <div id="sample2" ondragover="drover(event)" ondrop="drop(event)"></div>
+    <br> <br>
+    <img id="drag1" src="assets/jpg.jfif" alt="Sample" draggable="true" ondragstart="drag(event)">
+    <img id="drag2" src="assets/jpg2.jfif" alt="Sample2" draggable="true" ondragstart="drag(event)">
+
+
+
+    <script>
+        function drag(ev) {
+            console.log("dragging");
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drover(ev) {
+            ev.preventDefault();
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var x = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(x));
+        }
+    </script>
+
+</body>
+
+</html>

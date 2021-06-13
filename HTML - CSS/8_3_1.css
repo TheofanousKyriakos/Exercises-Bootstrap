@@ -1,0 +1,228 @@
+#box {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    background-color: aqua;
+    /* animation-name: chroma; */
+    /* animation-duration: 3s; */
+    animation: chroma 3s ease-in infinite;
+}
+
+/* @keyframes chroma {
+    from { 
+        background-color: aqua;
+    }
+    to { 
+        background-color: green;
+    }
+} */
+
+@keyframes chroma {
+    0% { 
+        background-color: aqua;
+        width: 150px;
+    }
+    50% { 
+        background-color: yellow;
+        width: 500px;
+    }
+    100% { 
+        background-color: green;
+        width: 150px;
+    }
+}
+
+#kouti {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    background-color: pink;
+    text-align: center;
+    position: relative;
+    animation: anavosvino 4s linear infinite;
+    transform: skew(30deg, 20deg);
+}
+
+@keyframes anavosvino {
+    0%{
+        color: black;
+        left: 0px;
+        top: 0px;
+    }
+    25%{
+        color: pink;
+        left: 300px;
+        top: 0px;
+    }
+    50%{
+        color: black;
+        left: 300px;
+        top: 300px;
+    }
+    75%{
+        color: pink;
+        left: 0px;
+        top: 300px;
+    }
+    100%{
+        color: black;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+#trans {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    background-color: #8f0e4e;
+    /* transform: rotate(20deg); */
+    /* transform: skewY(30deg); */
+    animation: rotation 3s linear infinite;
+}
+
+/* #trans:hover {
+    transform: scaleY(2);
+} */
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    } 25% {
+        transform: rotate(90deg);
+    } 50% {
+        transform: rotate(180deg);
+    } 75% {
+        transform: rotate(270deg);
+    } 100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+#eikona {
+    filter: grayscale(100%);
+}
+
+#eikona1 {
+    filter: blur(3px);
+}
+
+#eikona1:hover {
+    filter: blur(0px);
+}
+
+
+
+
+
+/* 
+<div id="circle">
+ 
+ <div id="triangle"></div>
+ <div id="dot"></div>
+ </div>
+ 
+
+
+#dot {
+ width: 25px;
+ height: 25px;
+ border-radius: 50%;
+ background-color: black; 
+ z-index: 2;
+ position: relative;
+ left: 40px;
+ top: -130px;
+ 
+}
+#circle {
+ width: 150px;
+ height: 150px;
+ border-radius: 50%;
+ margin: 10px;
+ background-color: aqua;
+ position: relative;
+ animation: chroma2 4s infinite;
+}
+ 
+#triangle {
+ color: white;
+ width: 0px;
+ height: 0px;
+ z-index: 0;
+ position: relative;
+ border: 78px solid black;
+ border-top-color: transparent;
+ border-right-color: white;
+ border-bottom-color: transparent;
+ border-left-color: transparent;
+ animation: pacman 0.5s infinite;
+}
+ 
+@keyframes pacman {
+ 0% {
+ left: 0px;
+ }
+ 15% {
+ left: 20px;
+ }
+ 30% {
+ left: 40px;
+ }
+ 45% {
+ left: 64px;
+ }
+ 52% {
+ left: 78px;
+ }
+ 60% {
+ left: 64px;
+ }
+ 60% {
+ left: 40px;
+ }
+ 80% {
+ left: 20px;
+ }
+ 100% {
+ left: 0px;
+ }
+ 
+}
+ 
+@keyframes chroma2 {
+ 0% {
+ background-color: aqua;
+ left: 200px;
+ }
+ 50% {
+ background-color: green;
+ left: 0;
+ }
+ 100% {
+ background-color: orange;
+ left: 200px;
+ }
+} */
+
+
+
+
+/* paradeigma pseudokodika mallon */
+
+/* #btn {
+margin-top: 80px;
+margin-left: 50px;
+background-color: red;
+color: white;
+font-size: 22px;
+padding: 8px 15px;
+border-radius: 8px;
+border: none;
+outline: none;
+}
+
+button:active {
+transform: scale(0.98);
+} */
