@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding-left: 50px;
+}
+
+#container{
+    max-width: 1100px;
+    margin: 20px auto;
+}
+
+header{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: aqua;
+}
+
+main{
+    height: 600px;
+}
+
+aside{
+    float: left;
+    width: 30%;
+    background-color: green;
+    height: 600px;
+}
+
+section{
+    float: left;
+    background-color: black;
+    width: 70%;
+    height: 600px;
+}
+
+footer{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: gold;
+}
+
+#box{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: relative;
+    left: 50px;
+    top: 10px;
+}
+
+#kouti{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    position: fixed;
+    z-index: 4;
+}
+
+#koutaki{
+    width: 150px;
+    height: 150px;
+    background-color: orange;
+    position: absolute;
+    top: 10px;
+}
+
+#sticky {
+    background-color: oldlace;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    top: 0;
+    position: sticky;
+}
+ ul > li {
+    background-color: pink;
+}
+
+div +p{
+    color: blue;
+}
+
+div ~ p {
+    background-color: yellow;
+}

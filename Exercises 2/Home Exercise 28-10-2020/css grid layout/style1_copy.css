@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+.enclosure1 p{
+    padding-top: 50px;
+    font-weight: bolder;
+}
+
+.enclosure1{
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 5px solid gold;
+}
+
+.enclosure1_1{
+    width: 45%;
+    height: 100%;
+    background-color: red;
+    float: left;
+}
+
+.enclosure1_1_1{
+    height: 50%;
+    width: 40%;
+    background-color: orange;
+    float: left;
+}
+
+.enclosure1_1_1_1{
+    height: 25%;
+    background-color: red;
+}
+
+.enclosure1_1_1_2{
+    height: 25%;
+    background-color: green;
+}
+
+.enclosure1_1_2{
+    height: 50%;
+    width: 60%;
+    background-color: palevioletred;
+    float: left;
+}
+
+.enclosure1_1_3{
+    height: 25%;
+    background-color: olive;
+    float: left;
+    width: 100%;
+}
+
+.enclosure1_1_3_1{
+    width: 40%;
+    height: 100%;
+    float: left;
+    background-color: olive;
+}
+
+.enclosure1_1_3_2{
+    width: 10%;
+    height: 100%;
+    float: left;
+    background-color: green;
+}
+
+.enclosure1_1_3_3{
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-color: cyan;
+}
+
+.enclosure1_1_4{
+    height: 25%;
+    background-color: purple;
+    width: 100%;
+    float: left;
+}
+
+.enclosure1_2{
+    width: 35%;
+    height: 100%;
+    background-color: orangered;
+    float: left;
+}
+
+.enclosure1_3{
+    width: 20%;
+    height: 100%;
+    background-color: yellow;
+    float: left;
+}
+
+.enclosure1_3_1{
+    height: 25%;
+    background-color: yellow;
+}
+
+.enclosure1_3_2{
+    height: 25%;
+    background-color: blue;
+}
+
+.enclosure1_3_3{
+    height: 25%;
+    background-color: green;
+}
+
+.enclosure1_3_4{
+    height: 25%;
+    background-color: red;
+}
